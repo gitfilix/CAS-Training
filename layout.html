@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>CAS Fee -Aufgabe: Layout nachbauen - by FLX</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+
+<style>
+    body{
+        background: #999;
+        font-family: 'Raleway', verdana, sans-serif;
+        font-size: 100.01%;
+        font-weight: 400;
+    }
+
+    #wrapper{
+        max-width: 700px;
+        margin: 0 auto;
+        background: #F2F2F2;
+        color: #222;
+        border: 1px solid #111;
+    }
+
+    article{
+        padding-bottom: 180px;
+        border-bottom: 1px solid #444444;
+    }
+
+    article h1{
+        padding-left: 20px;
+        font-size: 160%;
+        line-height: 160%;
+        color: #222;
+    }
+
+    article h2{
+        padding-left: 20px;
+        font-size: 120%;
+        line-height: 120%;
+        color: #222;
+    }
+
+    article h3{
+        padding-left: 20px;
+        font-size: 100%;
+        line-height: 100%;
+        color: #222;
+    }
+
+    /* ------- Variante 1 --------------*/
+    #layoutwrapper1{
+        width: 100%;
+        max-width: 700px;
+    }
+    #layoutwrapper1 >div{
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+    #header1{
+        background: yellow;
+    }
+    #nav1{
+        background: deepskyblue;
+        float: left;
+        width: 20%;
+    }
+    #content1{
+        background: green;
+        float: left;
+        width: 60%;
+    }
+    #sidebar1{
+        background: darkcyan;
+        float: left;
+        width: 20%;
+    }
+    #footer1{
+        background: yellow;
+    }
+    .clear{
+        clear: both;
+    }
+
+    /* ------- Variante 2 --------------*/
+
+    #layoutwrapper2{
+        width: 100%;
+        position: relative;
+
+    }
+    #layoutwrapper2 >div{
+        /*padding-left: 10px;*/
+        padding-top:5px;
+    }
+    #header2{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        background: yellow;
+    }
+    #nav2{
+        background: deepskyblue;
+        position: absolute;
+        top: 50px;
+        width: 100px;
+        height: 50px;
+    }
+    
+    #content2{
+        background: green;
+        position: absolute;
+        width: 500px;
+        height: 50px;
+        top: 50px;
+        left: 100px;
+    }
+    
+    #sidebar2{
+        background: darkcyan;
+        position: absolute;
+        height: 50px;
+        width: 100px;
+        top: 50px;
+        left: 600px;
+    }
+    #footer2{
+        background: yellow;
+        position: absolute;
+        width: 700px;
+        height: 40px;
+        left: 0px;
+        top: 100px;
+    }
+
+    /* ------- Variante 3 --------------*/
+
+
+    .flex-container{
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .flex-container div{
+        flex:1;
+        padding: 10px;
+        flex-grow: 1;
+    }
+
+    #header3{
+        display: flex;
+        background: yellow;
+    }
+
+    #nav3{
+        width: 20%;;
+        background: deepskyblue;
+
+    }
+
+    #content3{
+        background: green;
+        width: 60%;
+    }
+
+    #sidebar3{
+        background: darkcyan;
+        width: 20%;
+    }
+
+    #footer3{
+        background: yellow;
+    }
+
+    #footer4{
+        background: #222222;
+        color: #999999;
+        padding: 20px 20px 10px 0;
+        font-size: 80%;
+        text-align: right;
+    }
+</style>
+</head>
+<body>
+<div id="wrapper">
+
+    <article>
+        <h1>Variante 1</h1>
+        <h2>very quick & very dirty</h2>
+        <h3>Methode: floating </h3>
+        <div id="layoutwrapper1">
+            <div id="header1">Header</div>
+            <div id="nav1">Nav <br />&nbsp;</div>
+            <div id="content1">Content <br />Bla</div>
+            <div id="sidebar1">Sidebar <br />&nbsp;</div>
+            <div id="footer1">Footer</div>
+        </div>
+    </article>
+    <br />
+    <article>
+        <h1>Variante 2</h1>
+        <h2>Absolut</h2>
+        <h3>Methode: position absolute</h3>
+        <div id="layoutwrapper2">
+            <div id="header2">Header</div>
+            <div id="nav2">Nav </div>
+            <div id="content2">Content <br />Bla</div>
+            <div id="sidebar2">Sidebar </div>
+            <div id="footer2">Footer</div>
+        </div>
+    </article>
+    <br />
+    <article>
+        <h1>Variante 3</h1>
+        <h2>Flexbox</h2>
+        <h3>Methode: Flexbox</h3>
+        <div id="layoutwrapper3" >
+            <div class="flex-container">
+                <div id="header3">Header</div>
+            </div>
+            <div class="flex-container">
+                <div id="nav3">Nav </div>
+                <div id="content3">Content<br />Bla</div>
+                <div id="sidebar3">Sidebar </div>
+            </div>
+            <div class="flex-container">
+                <div id="footer3">Footer</div>
+            </div>
+        </div>
+
+    </article>
+    <footer id="footer4">
+        <p>
+        CAS FEE Übungsaufgabe 1 -  by Filix
+        </p>
+
+    </footer>
+</div>
+
+</body>
+</html>
