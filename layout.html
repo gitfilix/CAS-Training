@@ -8,14 +8,15 @@
 
 <style>
     body{
-        background: #999;
+        background: #777;
         font-family: 'Raleway', verdana, sans-serif;
-        font-size: 100.01%;
+        /*font-size: 100.01%;*/
         font-weight: 400;
     }
 
     #wrapper{
         max-width: 700px;
+        font-family: 'Raleway';
         margin: 0 auto;
         background: #F2F2F2;
         color: #222;
@@ -46,6 +47,14 @@
         font-size: 100%;
         line-height: 100%;
         color: #222;
+    }
+
+    footer, header{
+        background: #222222;
+        color: #999999;
+        padding: 20px 20px 10px 0;
+        font-size: 80%;
+        text-align: right;
     }
 
     /* ------- Variante 1 --------------*/
@@ -175,21 +184,17 @@
         background: yellow;
     }
 
-    #footer4{
-        background: #222222;
-        color: #999999;
-        padding: 20px 20px 10px 0;
-        font-size: 80%;
-        text-align: right;
-    }
+
 </style>
 </head>
 <body>
 <div id="wrapper">
-
+    <header>
+        <p>Übungsaufgabe 1</p>
+    </header>
     <article>
         <h1>Variante 1</h1>
-        <h2>very quick & very dirty</h2>
+        <h2>very quick and very dirty</h2>
         <h3>Methode: floating </h3>
         <div id="layoutwrapper1">
             <div id="header1">Header</div>
@@ -202,12 +207,12 @@
     <br />
     <article>
         <h1>Variante 2</h1>
-        <h2>Absolut</h2>
+        <h2>Absolut and fixed</h2>
         <h3>Methode: position absolute</h3>
         <div id="layoutwrapper2">
             <div id="header2">Header</div>
             <div id="nav2">Nav </div>
-            <div id="content2">Content <br />Bla</div>
+            <div id="content2">Content<br />Bla</div>
             <div id="sidebar2">Sidebar </div>
             <div id="footer2">Footer</div>
         </div>
@@ -216,7 +221,7 @@
     <article>
         <h1>Variante 3</h1>
         <h2>Flexbox</h2>
-        <h3>Methode: Flexbox</h3>
+        <h3>Methode: FlexBox</h3>
         <div id="layoutwrapper3" >
             <div class="flex-container">
                 <div id="header3">Header</div>
@@ -230,13 +235,9 @@
                 <div id="footer3">Footer</div>
             </div>
         </div>
-
     </article>
-    <footer id="footer4">
-        <p>
-        CAS FEE Übungsaufgabe 1 -  by Filix
-        </p>
-
+    <footer>
+        <p>CAS FEE Übungsaufgabe 1 -  by Filix</p>
     </footer>
 </div>
 
