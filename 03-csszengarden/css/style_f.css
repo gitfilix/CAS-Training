@@ -29,32 +29,31 @@ p {
 h3 { 
 	/*font: italic normal 1.4em arial, sans-serif;*/
 	letter-spacing: 1px; 
-	margin-bottom: 0; 
-	/*color: #7D775C;*/
+	margin-bottom: 0;
 	}
-/*a:link { */
-	/*font-weight: bold; */
-	/*text-decoration: none; */
-	/*color: #B7A5DF;*/
-	/*}*/
-/*a:visited { */
-	/*font-weight: bold; */
-	/*text-decoration: none; */
-	/*color: #D4CDDC;*/
-	/*}*/
-/*a:hover, a:focus, a:active { */
-	/*text-decoration: underline; */
-	/*color: #9685BA;*/
-	/*}*/
-/*abbr {*/
-	/*border-bottom: none;*/
-	/*}*/
 
+a{
+	text-decoration: none;
+	color: #005291;
+}
+
+a:hover {
+	color: #f75d00;
+	text-decoration: none;
+}
+
+a:visited {
+	text-decoration: none;
+	color: #005291;
+}
+
+abbr a{
+	text-decoration: none !important;
+}
 
 /* specific divs */
 .page-wrapper {
 	background: #FFF;
-	/*padding: 0 175px 0 110px;  */
 	margin: 0 auto;
 	width: 913px;
 	position: relative;
@@ -96,6 +95,7 @@ header h2 {
 header {
 	height: 190px;
 }
+
 /*demonstration*/
 .summary {
 	position: absolute;
@@ -175,8 +175,11 @@ header {
 	margin-bottom: 1.5em;
 }
 
-footer { 
-	text-align: center; 
+footer {
+	border-top: 1px solid #777;
+	padding-top: 3px;
+	text-align: left;
+
 	}
 footer a:link, footer a:visited { 
 	margin-right: 20px; 
