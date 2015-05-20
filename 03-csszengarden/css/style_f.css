@@ -1,0 +1,366 @@
+/* css Zen Garden default style v1.02 */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+
+/* This file based on 'Tranquille' by Dave Shea */
+/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
+/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
+
+/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
+
+
+/* basic elements */
+html {
+	margin: 0;
+	padding: 0;
+	}
+body { 
+	font: 75% arial, sans-serif;
+	line-height: 1.8em;
+	color: #111;
+	background: #b2cade;
+	margin: 0;
+	}
+
+p { 
+	margin-top: 0; 
+	text-align: justify;
+	}
+
+h3 { 
+	/*font: italic normal 1.4em arial, sans-serif;*/
+	letter-spacing: 1px; 
+	margin-bottom: 0; 
+	/*color: #7D775C;*/
+	}
+/*a:link { */
+	/*font-weight: bold; */
+	/*text-decoration: none; */
+	/*color: #B7A5DF;*/
+	/*}*/
+/*a:visited { */
+	/*font-weight: bold; */
+	/*text-decoration: none; */
+	/*color: #D4CDDC;*/
+	/*}*/
+/*a:hover, a:focus, a:active { */
+	/*text-decoration: underline; */
+	/*color: #9685BA;*/
+	/*}*/
+/*abbr {*/
+	/*border-bottom: none;*/
+	/*}*/
+
+
+/* specific divs */
+.page-wrapper {
+	background: #FFF;
+	/*padding: 0 175px 0 110px;  */
+	margin: 0 auto;
+	width: 913px;
+	position: relative;
+	}
+
+.intro {
+	padding-left: 20px;
+	width: 100%;
+	height: auto;
+	background: #FFF url(../pix/seeufer.jpg) no-repeat top left ;
+	background-size: contain;
+	position: relative;
+	}
+
+header h1 {
+	color:  #222;
+	display: block;
+	width: 219px;
+	margin: 0;
+	padding-top: 7px;
+	padding-left: 60px;
+	padding-bottom: 50px;
+	font-size: 1.3em;
+	/*float: left;*/
+	/*text-indent: 100%;*/
+	/*overflow: hidden;*/
+	background: url("../pix/logo.gif") no-repeat top left;
+}
+
+header h2 {
+	font-size: 1.2em;
+	/*height: 35px;*/
+	padding: 7px;
+	float: left;
+	background: #FFF;
+	color:#005092;
+	}
+
+header {
+	height: 190px;
+}
+/*demonstration*/
+.summary {
+	position: absolute;
+	top: 55px;
+	right: 20px;
+	background:#ccdce9;
+	color: #111111;
+	clear: both; 
+	padding: 15px 15px 15px 15px;
+	width: 124px;
+	float: left;
+	}
+
+.summary p {
+	font-size: 0.9em;
+	line-height: 1.1em;
+	text-align: left;
+	text-overflow: clip;
+	}
+
+.summary a{
+	display: block;
+	color:#005092;
+	text-decoration: none;
+}
+.summary a:hover{
+	color: #f75d00;
+}
+
+
+.preamble {
+	display: none;
+
+	clear: right; 
+	padding: 0px 10px 0 10px;
+	background:#A43;
+	}
+
+.supporting {	
+	padding-left: 200px;
+	/*padding-right: 300px;*/
+	margin-bottom: 40px;
+	}
+
+.explanation h3{
+	color: #fff !important;
+	background: #005092;
+	font-size: 1em;
+	font-style: normal;
+	font-weight: 600;
+	text-transform: uppercase;
+	padding: 7px;
+	margin-top: 0;
+	margin-bottom: 1.5em;
+}
+
+.main{
+	font-family: arial, sans-serif;
+	font-size: 1em;
+	line-height: 1.4em;
+	padding-top: 20px;
+	margin-top: 5px;
+	border-top: 1px solid black;
+	width: 433px;
+}
+.intro:after{
+	content: 'Die HSR';
+	color: #f75d00;
+	text-align: left;
+}
+
+.main h3{
+	font-weight: bold;
+	color: #111;
+	font-size: 1em;
+	font-style: normal;
+	margin-bottom: 1.5em;
+}
+
+footer { 
+	text-align: center; 
+	}
+footer a:link, footer a:visited { 
+	margin-right: 20px; 
+	}
+
+
+.sidebar{
+
+}
+
+.wrapper {
+	background:#FFF ;
+	padding: 10px;
+	margin-top: 150px;
+	width: 130px;
+}
+
+
+
+/* top navigation*/
+.design-archives{
+	position: absolute;
+	top:0;
+	left: 240px;
+	/*padding-top: 10px;*/
+	margin: 0;
+	font-style: normal;
+	font-weight: 200;
+}
+
+.design-archives h3{
+	display: none;
+}
+
+
+.design-archives ul{
+	padding: 5px 0 0 0;
+	margin: 0;
+}
+
+.design-archives li{
+	display: inline;
+	line-height: 1.6em;
+	text-decoration: none;
+	background: #FFF;
+	color: #005092;
+	padding: 10px 10px 10px 10px;
+}
+
+.design-archives li a:link {
+	text-decoration: none;
+	color: #005291;
+}
+
+.design-archives li a:hover {
+	color: #f75d00;
+	text-decoration: none;
+}
+
+.design-archives li a:visited {
+	text-decoration: none;
+	color: #005291;
+}
+
+
+/* asside info resource boxes */
+
+.zen-resources{
+	background: #b2cade;
+	position: absolute;
+	top:238px;
+	left: 665px;
+	width: 160px;
+	/*padding-left: 10px;*/
+	color: #111;
+}
+
+.zen-resources>h3 {
+	color: #111;
+	margin: 0 0 0 0;
+	padding-left: 5px;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 1em;
+	padding-bottom: 1.5em;
+	/*border-bottom: 1px solid #FFF;*/
+}
+
+.zen-resources ul{
+	border-top: 1px solid #FFF;
+	margin: 0;
+	padding: 0;
+}
+
+.zen-resources li{
+	line-height: 1em;
+	font-variant: normal;
+	font-weight: 400;
+	display: block;
+	padding: 7px 5px 5px 7px;
+
+	margin-bottom: 5px;
+	list-style-type: none;
+}
+
+
+
+
+
+.zen-resources li a{
+	text-decoration: none;
+}
+
+.zen-resources li a:link{
+	color: #005291;
+}
+
+.zen-resources li a:hover {
+	color: #f75d00;
+	text-decoration: none;
+}
+
+.zen-resources li li a:visited {
+	color: #005291;
+}
+
+
+
+
+
+/*menu on the left*/
+.design-selection {
+	position: absolute;
+	top: 210px;
+	left: 20px;
+	width: 130px;
+}
+
+.design-selection h3 {
+	display: none;
+}
+
+.design-selection ul {
+	margin: 0;
+	padding: 30px 0px 0px 0px;
+}
+
+.design-selection li {
+	border-top: 1px solid #888;
+	font-variant: normal;
+	font-weight: 100;
+	display: block;
+	padding-top: 7px;
+	margin-bottom: 5px;
+	list-style-type: none;
+	line-height: 1em;
+	}
+
+.design-selection a{
+	text-decoration: none;
+}
+
+
+.design-selection li a:link {
+	color: #005291;
+	}
+
+.design-selection li a:hover {
+	color: #f75d00;
+	text-decoration: none;
+	}
+
+.design-selection li a:visited {
+	color: #005291;
+	}
+
+
+.extra1 {
+	display: none;
+
+	/*background: #B7A5DF;*/
+	/*position: absolute; */
+	/*top: 40px; */
+	/*right: 0; */
+	/*width: 148px; */
+	/*height: 110px;*/
+	}
